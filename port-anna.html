@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Anna</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b1a2f;
+      color: #f5f5dc;
+    }
+    header {
+      background-color: #f06292;
+      padding: 2rem;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+    .top-contacts {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .top-contacts a {
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: bold;
+      color: white;
+      transition: all 0.3s ease;
+    }
+    .top-contacts a[href^="mailto"] {
+      background-color: #d44638;
+    }
+    .top-contacts a[href^="tel"] {
+      background-color: #34a853;
+    }
+    .top-contacts a[href*="wa.me"] {
+      background-color: #25D366;
+    }
+    .top-contacts a[href*="facebook"] {
+      background-color: #3b5998;
+    }
+    .top-contacts a:hover {
+      filter: brightness(1.1);
+      transform: scale(1.05);
+    }
+    .section {
+      padding: 2rem;
+    }
+    .section h2 {
+      color: #f06292;
+    }
+    .contact-form {
+      background-color: #132b45;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #f06292;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #d9507f;
+    }
+    .cta-buttons {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .cta-buttons a {
+      background-color: #f06292;
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+    .cta-buttons a:hover {
+      background-color: #d9507f;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #0b1a2f;
+      color: #ccc;
+    }
+    @media screen and (max-width: 600px) {
+      .top-contacts, .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Photo de profil d'Anna" class="profile-img">
+    <h1>Anna - Téléconseillère & Service Client</h1>
+    <p>"Offrir un service client exceptionnel et contribuer à la réputation des entreprises."</p>
+    <div class="top-contacts">
+      <a href="mailto:anna.contact@example.com">Email</a>
+      <a href="tel:+261341234567">Appeler</a>
+      <a href="https://wa.me/261341234567" target="_blank">WhatsApp</a>
+      <a href="https://www.facebook.com/anna.profil" target="_blank">Facebook</a>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>À propos de moi</h2>
+    <p>Professionnelle passionnée par le contact client, Je cherche un poste de téléconseillère ou un poste similaire pour mettre à profit mes compétences relationnelles, ma rigueur et mon sens du service. Mon objectif est d'exceller dans ce domaine et de contribuer activement à l'image de marque des entreprises que je représente.</p>
+  </section>
+
+  <section class="section">
+    <h2>Mes Expériences</h2>
+    <ul>
+      <li><strong>Agence Capsule</strong> – Agent enquêtrice<br><em>J'ai mené avec rigueur des enquêtes téléphoniques pour recueillir des données fiables, tout en instaurant une relation de confiance avec les interlocuteurs.</em></li>
+      <li><strong>Ariane Études</strong> – Enquêtrice par téléphone<br><em>Grâce à ma capacité d'écoute et à ma clarté d'expression, j'ai assuré un taux de réponse élevé et une excellente qualité des données collectées.</em></li>
+      <li><strong>Restaurant familial</strong> – Serveuse<br><em>Expérience fondatrice dans la gestion du stress, l'accueil chaleureux et le service client rapide et personnalisé.</em></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Valeurs ajoutées pour votre entreprise</h2>
+    <ul>
+      <li>Une représentante souriante et efficace pour améliorer votre relation client</li>
+      <li>Des échanges fluides et professionnels avec vos clients</li>
+      <li>Capacité à s’adapter rapidement aux procédures et outils internes</li>
+      <li>Fidélisation client par la qualité du service fourni</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Compétences</h2>
+    <ul>
+      <li>Communication claire et empathique</li>
+      <li>Bonne gestion des appels téléphoniques</li>
+      <li>Adaptabilité et patience</li>
+      <li>Maîtrise des outils informatiques de base</li>
+      <li>Gestion des situations conflictuelles</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Qualités</h2>
+    <ul>
+      <li>Écoute active</li>
+      <li>Esprit d'équipe</li>
+      <li>Rigueur et professionnalisme</li>
+      <li>Sens du détail</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Contactez moi</h2>
+
+    <div class="contact-form">
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="nom" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" rows="4" placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>Portfolio de Anna - Téléconseillère | © 2025</p>
+  </footer>
+</body>
+</html>
